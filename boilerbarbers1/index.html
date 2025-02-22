@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boiler Barbers</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "stylesheet", sans-serif;
+        text-align: center;
+        color: white;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .header {
+        position: relative;
+        height: 200px;
+        background: linear-gradient(to bottom, black 20%, gold 80%);
+        clip-path: ellipse(70% 50% at 50% 0%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header h1 {
+        font-size: 3rem;
+        background: linear-gradient(to bottom, black 50%, gold 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .content {
+        padding: 50px 20px;
+        background: linear-gradient(to bottom, gold, black);
+        flex: 1;
+      }
+      .content img {
+        max-width: 30%;
+        height: auto;
+        border: thick 10px black;
+        border-radius: 10%;
+        margin: 20px 0;
+      }
+      .book-btn {
+        display: inline-block;
+        background: black;
+        color: gold;
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .footer {
+        background: black;
+        padding: 20px 0;
+        margin-top: auto;
+      }
+      .footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Boiler Barbers</h1>
+    </div>
+    <div class="content">
+      <img src="images/IMG_7569.jpeg" alt="Barber Image Here" />
+      <br />
+      <a href="book.html" class="book-btn">Book an Appointment</a>
+    </div>
+    <div class="footer">
+      <a href="#">Sign Up</a>
+      <a href="#">Settings</a>
+      <a href="#">About</a>
+    </div>
+  </body>
+</html>
