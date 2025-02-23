@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 export const Header = () => {
     return (
@@ -30,14 +31,14 @@ export const Header = () => {
     >
       About
     </Link>
-    <Link
-      href={{
-        pathname: '/about',
-        query: { name: 'test' },
-      }}
-    >
-      Log In
-    </Link>    
+      
+                  <SignedOut>
+                    <SignInButton />
+                    <SignUpButton />
+                  </SignedOut>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
       </nav>
 
 
