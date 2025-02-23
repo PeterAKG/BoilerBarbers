@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gray-100">
