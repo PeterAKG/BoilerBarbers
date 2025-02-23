@@ -3,11 +3,11 @@ import Link from "next/link";
 import Options from './components/options';
 
 const diningHalls = [
-  { label: 'Wiley Dining Court', href: '/Wiley', image: '/wiley.jpg'},
-  { label: 'Windsor Dining Court', href: '/Windsor', image: '/windsor.jpg'},
-  { label: 'Earhart Dining Court', href: '/Earhart', image: '/earhart.jpg'},
-  { label: 'Hillenbrand Dining Court', href: '/Hillenbrand', image: '/hillenbrand.jpg'},
-  { label: 'Ford Dining Court', href: '/Ford', image: '/ford.jpg'},
+  { label: 'Wiley Dining Court', href: '/wiley', image: '/wiley.jpg'},
+  { label: 'Windsor Dining Court', href: '/windsor', image: '/windsor.jpg'},
+  { label: 'Earhart Dining Court', href: '/earhart', image: '/earhart.jpg'},
+  { label: 'Hillenbrand Dining Court', href: '/hillenbrand', image: '/hillenbrand.jpg'},
+  { label: 'Ford Dining Court', href: '/ford', image: '/ford.jpg'},
 ];
 
 const resturaunts = [

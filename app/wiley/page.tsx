@@ -12,7 +12,7 @@ const sections = [
   { title: "Big Bytes", description: ["Scrambled Eggs", "Smokey Links", "Buttermilk Biscuits", "Chorizo Gravy", "Hash Brown"] },
   { title: "Data Crunch", description: ["Scrambled Eggs", "Smokey Links", "Buttermilk Biscuits", "Chorizo Gravy", "Hash Brown"] },
   { title: "Firewall", description: ["Scrambled Eggs", "Smokey Links", "Buttermilk Biscuits", "Chorizo Gravy", "Hash Brown"] },
-  { title: "By Request", description: ["fine shyt (peter kaya gretchikha)"] },
+  { title: "By Request", description: ["GF", "Vegan"] },
 ];
 
 type Post = {
@@ -43,12 +43,12 @@ export default function Page() {
       <div className="flex items-center justify-center mb-6 space-x-4">
         <div className="bg-white p-2 rounded-xl shadow-lg">
           <img 
-            src="\hilly.png" 
-            alt="Hillenbrand Dining Court" 
+            src="\wiley.png" 
+            alt="Wiley Dining Court" 
             className="w-24 h-24 rounded-lg object-cover"
           />
         </div>
-        <h1 className="text-4xl font-bold text-yellow-500">Hillenbrand Dining Court</h1>
+        <h1 className="text-4xl font-bold text-yellow-500">Wiley Dining Court</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {sections.map((section) => (

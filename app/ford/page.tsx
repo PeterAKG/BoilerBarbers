@@ -12,7 +12,7 @@ const sections = [
   { title: "Big Bytes", description: ["Scrambled Eggs", "Smokey Links", "Buttermilk Biscuits", "Chorizo Gravy", "Hash Brown"] },
   { title: "Data Crunch", description: ["Scrambled Eggs", "Smokey Links", "Buttermilk Biscuits", "Chorizo Gravy", "Hash Brown"] },
   { title: "Firewall", description: ["Scrambled Eggs", "Smokey Links", "Buttermilk Biscuits", "Chorizo Gravy", "Hash Brown"] },
-  { title: "By Request", description: ["fine shyt (peter kaya gretchikha)"] },
+  { title: "By Request", description: ["GF", "Vegan"] },
 ];
 
 type Post = {

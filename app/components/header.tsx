@@ -18,7 +18,7 @@ export const Header = () => {
         <Image src="/Logo.png" width={200} height={300} alt="BoilerFoods" />
         <Link
           href={{
-            pathname: "/home",
+            pathname: "/",
             query: { name: "test" },
           }}
         >
