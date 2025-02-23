@@ -1,30 +1,43 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 export const Header = () => {
     return (
 <>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Header Example</title>
+  <title>BoilerFoods</title>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-</head>
-<body className="bg-gray-100">
+      <nav className="fixed top-0 left-0 w-full flex justify-evenly items-center p-4 bg-orange-100 shadow-md z-50 text-xl text-stone-950 font-mono">
 
-  <header className="bg-white shadow">
-    <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-
-      <div className="text-2xl font-bold text-gray-800">
-        MyWebsite
-      </div>
-
-
-      <nav className="hidden space-x-4 md:flex">
-        <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Home</a>
-        <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
-        <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
-        <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+      <Image
+      src="/Logo.png"
+      width={300}
+      height={300}
+      alt="Picture of the author"
+    />
+      <Link
+      href={{
+        pathname: '/home',
+        query: { name: 'test' },
+      }}
+    >
+      Home
+    </Link>
+    <Link
+      href={{
+        pathname: '/about',
+        query: { name: 'test' },
+      }}
+    >
+      About
+    </Link>
+    <Link
+      href={{
+        pathname: '/about',
+        query: { name: 'test' },
+      }}
+    >
+      Log In
+    </Link>    
       </nav>
 
 
@@ -46,17 +59,6 @@ export const Header = () => {
           />
         </svg>
       </button>
-    </div>
-  </header>
-
-  <main className="container mx-auto px-4 py-8">
-    <h1 className="text-3xl font-bold mb-4">Welcome to MyWebsite</h1>
-    <p>
-      This is just a placeholder for the main content. Resize the browser window
-      to see the responsive effect on the header.
-    </p>
-  </main>
-</body>
 </>
     );
 }
