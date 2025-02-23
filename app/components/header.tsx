@@ -17,7 +17,7 @@ export const Header = () => {
     />
       <Link
       href={{
-        pathname: '/home',
+        pathname: '/',
         query: { name: 'test' },
       }}
     >

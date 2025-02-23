@@ -6,7 +6,7 @@ const diningHalls = [
   { label: 'Wiley Dining Court', href: '/Wiley' },
   { label: 'Windsor Dining Court', href: '/Windsor' },
   { label: 'Earhart Dining Court', href: '/Earhart' },
-  { label: 'Hillenbrand Dining Court', href: '/Hillenbrand' },
+  { label: 'Hillenbrand Dining Court', href: "/hillenbrand" },
   { label: 'Ford Dining Court', href: '/Ford' },
 ];
 
