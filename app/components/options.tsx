@@ -15,16 +15,16 @@ const NavigationLayout: React.FC<NavigationLayoutProps> = ({ items }) => {
   // Dynamic grid style: gridTemplateRows is set based on the number of items.
   const containerStyle: React.CSSProperties = {
     width: '80vw', // 80% of the viewport width
-    margin: '0 auto', // center horizontally
+    margin: '10vh auto', // center horizontally
     display: 'grid',
     gridTemplateRows: `repeat(${items.length}, auto)`, // dynamic number of rows
-    gap: '10px', // spacing between grid items
+    gap: '2.5vh', // spacing between grid items
   };
 
   return (
-    <nav style={containerStyle}>
+    <nav style={containerStyle} className = "text-xl">
       {items.map((item, index) => (
-        <Link key={index} href={item.href}>
+        <Link key={index} href={item.href} className = "bg-zinc-500 py-4 p-4 rounded-md">
           <button type="button" style={{ width: '100%', padding: '10px' }}>
             {item.label}
           </button>
